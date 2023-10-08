@@ -5,7 +5,7 @@
 }
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: initial;
 }
 
 body {
@@ -111,7 +111,10 @@ body {
     flex-wrap: wrap;
     justify-content: center; /* Center content horizontally */
     align-items:centre; /* Center content vertically */
-    margin-bottom: 30px; /* Add margin to separate content from the bottom */
+    margin-bottom: 30px;
+    margin-left: 00px; /* Move the entire .book container 10px to the left */
+    margin-top: 170px;  /* Move it 10px down */
+    margin-right: 00px; /* Add margin to separate content from the bottom */
 }
 
 .book {
@@ -119,6 +122,10 @@ body {
     padding: 20px;
     box-sizing: border-box;
     text-align: center;
+    margin-left: 00px; /* Move the entire .book container 10px to the left */
+    margin-top: 00px; /* Move it 10px up */
+    margin-bottom: 0px; /* Move it 10px down */
+    margin-right: 00px; 
 }
 
 .book img {
@@ -126,7 +133,10 @@ body {
     height: 460px;
     max-width: 40%;
     height: auto;
-    margin: auto;
+    margin-left: 10px; /* Move the entire .book container 10px to the left */
+    margin-top: 10px; /* Move it 10px up */
+    margin-bottom: 10px; /* Move it 10px down */
+    margin-right: 10px;  
 }
 
 .audio-player {
@@ -157,7 +167,7 @@ audio {
 
 /* Add background image for the "about" section */
 #OpenScience {
-  background-image: url('images/bg image.jpg');
+  background-image: url('images/moon2.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -166,8 +176,16 @@ audio {
   text-align: center; /* Center text vertically and horizontally */
 }
 
+.centered-title {
+    font-size: 4rem; /* Adjust the font size as needed */
+    text-align: center:; /* Center the text horizontally */
+    color: #faf9f9; /* Move the entire .book container 10px to the left */
+    margin: bottom 350px; /* Move it 10px up ** Text color */
+    /* Add any other styles you want for your title */
+}
+
 #Songs {
-  background-image: url('images/bg image.jpg');
+  background-image: url('images/moon2.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -176,7 +194,7 @@ audio {
   text-align: center; /* Center text vertically and horizontally */
 }
 #Stories {
-  background-image: url('images/bg image.jpg');
+  background-image: url('images/moon2.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -185,7 +203,7 @@ audio {
   text-align: center; /* Center text vertically and horizontally */
 }
 #Interview {
-  background-image: url('images/bg image.jpg');
+  background-image: url('images/moon2.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -194,7 +212,7 @@ audio {
   text-align: center; /* Center text vertically and horizontally */
 }
 #About {
-  background-image: url('images/bg image.jpg');
+  background-image: url('images/moon2.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -202,3 +220,40 @@ audio {
   color: #fff; /* Text color for better visibility */
   text-align: center; /* Center text vertically and horizontally */
 }
+    <style>
+        /* Overall page styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        /* Left-side paragraph styles */
+        .left-side {
+            flex: 1;
+            padding: 200px;
+            box-sizing: border-box;
+        }
+        .left-side p {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+        /* Right-side image styles */
+        .right-side {
+            flex: 1;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .right-side img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
