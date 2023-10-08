@@ -1,0 +1,204 @@
+/* style.css */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 100%;
+  font-family: sans-serif;
+}
+
+div, section, span, ul, li, a, header {
+  box-sizing: border-box;
+}
+
+/* CSS reset */
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  align-items: center;
+  position: fixed;
+  z-index: 999;
+}
+
+#menu li {
+  list-style: none;
+  display: inline-block;
+  margin: 20px;
+}
+
+#menu li a {
+  color: #fffcfc;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+section {
+  width: 100%;
+  text-align:center; /* Center the text horizontally */
+  display: flex;
+  justify-content: center; /* Center the flex items vertically */
+  height: 100vh;
+  position: relative;
+}
+
+#home {
+  /* Updated background property to include the video background */
+  background: url('Videos/SciIntro Background.mp4') no-repeat center center fixed;
+  background-size: cover;
+}
+
+#OpenScience,
+#Songs,
+#Stories,
+#Interview,
+#About {
+  background-color: #000000;
+}
+
+h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #007bff;
+}
+/* ... Your previous CSS code ... */
+
+/* CSS for the big heading title */
+
+.big-title {
+    font-family: "Times New Roman", Times, serif; /* Add the font-family property to specify the font */
+    font-size: 5em;
+    color: #f7f8f8;
+    text-align: center;up
+    margin-top: 30vh; /* Adjust the vertical positioning as needed */
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-shadow: 3px 3px 6px rgba(105, 00, 0, 0.5);
+}
+
+/* ... Your remaining CSS code ... */
+
+
+/* ... Your remaining CSS code ... */
+
+/* Updated styles for the body and container */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f6f6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Align content at the bottom of the page */
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center content horizontally */
+    align-items:centre; /* Center content vertically */
+    margin-bottom: 30px; /* Add margin to separate content from the bottom */
+}
+
+.book {
+    width: 33.33%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.book img {
+    width: 360px;
+    height: 460px;
+    max-width: 40%;
+    height: auto;
+    margin: auto;
+}
+
+.audio-player {
+    text-align: center;
+    margin-top: 30px; /* Adjust the margin as needed */
+}
+
+audio {
+    width:60%;
+}
+
+/* Video Background Styles */
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1; /* Place the video behind other content */
+}
+
+#video-bg {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/* Add background image for the "about" section */
+#OpenScience {
+  background-image: url('images/bg image.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; /* Adjust the height as needed */
+  color: #fff; /* Text color for better visibility */
+  text-align: center; /* Center text vertically and horizontally */
+}
+
+#Songs {
+  background-image: url('images/bg image.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; /* Adjust the height as needed */
+  color: #fff; /* Text color for better visibility */
+  text-align: center; /* Center text vertically and horizontally */
+}
+#Stories {
+  background-image: url('images/bg image.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; /* Adjust the height as needed */
+  color: #fff; /* Text color for better visibility */
+  text-align: center; /* Center text vertically and horizontally */
+}
+#Interview {
+  background-image: url('images/bg image.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; /* Adjust the height as needed */
+  color: #fff; /* Text color for better visibility */
+  text-align: center; /* Center text vertically and horizontally */
+}
+#About {
+  background-image: url('images/bg image.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; /* Adjust the height as needed */
+  color: #fff; /* Text color for better visibility */
+  text-align: center; /* Center text vertically and horizontally */
+}
